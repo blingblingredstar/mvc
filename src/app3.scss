@@ -1,0 +1,18 @@
+#app3 {
+  border: 1px solid paleturquoise;
+  position: relative;
+
+  .square {
+    background: #999;
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 5em;
+    height: 5em;
+    will-change: transform;
+    transition: transform 0.3s ease;
+
+    &.active {
+      transform: translateX(15em);
+    }
+  }
+}

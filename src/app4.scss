@@ -1,0 +1,25 @@
+#app4 {
+  border: 1px solid blueviolet;
+
+  .circle {
+    width: 15em;
+    height: 15em;
+    margin-top: 2em;
+    margin-left: 2em;
+    border-radius: 50%;
+    background: #999;
+
+    &.active {
+      animation: change-color 1s ease infinite alternate;
+    }
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background: seagreen;
+  }
+  100% {
+    background: rebeccapurple;
+  }
+}

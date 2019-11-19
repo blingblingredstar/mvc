@@ -1,0 +1,27 @@
+#app2 {
+  border: 1px solid seagreen;
+  height: 50vh;
+  .tab-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      border: 1px solid #999;
+      flex-basis: 50%;
+      text-align: center;
+
+      &.selected {
+        background: #333;
+        color: #fff;
+      }
+    }
+  }
+  .tab-content {
+    li {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

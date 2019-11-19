@@ -1,0 +1,9 @@
+.page {
+  display: flex;
+  flex-flow: row wrap;
+
+  & > section {
+    flex-basis: 50%;
+    height: 50vh;
+  }
+}
